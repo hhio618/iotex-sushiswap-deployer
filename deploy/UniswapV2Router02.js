@@ -5,8 +5,8 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
 
   const { deployer } = await getNamedAccounts();
 
-  const factoryAddress = (await deployments.get("WETH9")).address;
   const factoryAddress = (await deployments.get("UniswapV2Factory")).address;
+  const wethAddress = (await deployments.get("WETH9")).address;
 
   await deploy("UniswapV2Router02", {
     from: deployer,

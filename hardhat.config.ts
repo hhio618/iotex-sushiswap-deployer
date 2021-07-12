@@ -13,7 +13,6 @@ import "hardhat-spdx-license-identifier"
 import "hardhat-typechain"
 import "hardhat-watcher"
 import "solidity-coverage"
-import "./tasks"
 
 import { HardhatUserConfig } from "hardhat/types"
 import { removeConsoleLog } from "hardhat-preprocessor"
@@ -68,7 +67,7 @@ const config: HardhatUserConfig = {
       saveDeployments: true,
       tags: ["test", "local"],
     },
-    "iotex-testnet": {
+    iotextestnet: {
       url: "https://babel-api.testnet.iotex.io",
       accounts,
       chainId: 4690,
@@ -99,11 +98,24 @@ const config: HardhatUserConfig = {
           },
         },
       },
+      {
+        version: "0.4.22",
+        settings: {
+          optimizer: {
+            enabled: true,
+            runs: 200,
+          },
+        },
+      },
     ],
   },
   spdxLicenseIdentifier: {
     overwrite: false,
     runOnCompile: true,
+  },
+  tenderly: {
+    project: process.env.TENDERLY_PROJECT!,
+    username: process.env.TENDERLY_USERNAME!,
   },
   typechain: {
     outDir: "types",
@@ -111,7 +123,6 @@ const config: HardhatUserConfig = {
   },
   watcher: {
     compile: {
-      tasks: ["compile"],
       files: ["./contracts"],
       verbose: true,
     },

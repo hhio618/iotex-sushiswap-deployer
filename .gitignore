@@ -1,5 +1,6 @@
 node_modules
-
+.env
+*.log
 #Hardhat files
 cache
 artifacts

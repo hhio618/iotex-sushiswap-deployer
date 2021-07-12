@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: MIT
+
 /**
  *Submitted for verification at Etherscan.io on 2017-12-12
 */
@@ -17,8 +19,7 @@
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-//pragma solidity ^0.4.22;
-pragma solidity >=0.4.22 <0.9.0;
+pragma solidity ^0.4.18;
 
 contract WETH9 {
     string public name     = "Wrapped Ether";
