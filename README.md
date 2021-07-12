@@ -16,9 +16,11 @@ $ npx hardhat --network iotextestnet deploy
 ```
 4. Clone my sushiswap fork (this includes required configs for the iotex network that could be merged to sushiswap repo)
 ```sh
+$ cd ..
 $ git clone https://github.com/hhio618/sushiswap
+$ cd sushswap
 ```
-5. Set env variabels
+5. Setup env variabels
 ```sh
 $ cp .env.example .env # edit with your favorite editor!
 ```
