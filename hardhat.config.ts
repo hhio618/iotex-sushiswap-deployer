@@ -77,6 +77,13 @@ const config: HardhatUserConfig = {
       gas: 8500000,
       gasPrice: 1000000000000
     },
+    iotexmainnet: {
+      url: "https://babel-api.mainnet.iotex.io",
+      accounts,
+      chainId: 4689,
+      gas: 8500000,
+      gasPrice: 1000000000000
+    },
   },
   paths: {
     artifacts: "artifacts",
