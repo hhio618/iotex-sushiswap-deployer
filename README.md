@@ -36,6 +36,7 @@ Steps:
 3. Deploy
 
 ## Deployed testnet contracts
+WIOTX: `0xBd222dc5F807846b45A1d2B31E55a7429423Aa91`  
 SushiToken: `0x2d52e036D8810220b07f668Ed9bD2EC9CE9bB66E`   
 MiniChefV2: `0x88A7b9143C3fa4d032AA3F2fa1d299b5A5704249`  
 MasterChef: `0x817Abc5895d294a66156931f24AE6e91590511Da`  (This is optional, but needs another uniswapv2 contract deployments)

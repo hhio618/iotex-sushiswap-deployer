@@ -19,6 +19,7 @@ export type { IMigrator } from "./IMigrator";
 export type { UniswapV2Pair } from "./UniswapV2Pair";
 export type { UniswapV2Router02 } from "./UniswapV2Router02";
 export type { WETH9 } from "./WETH9";
+export type { WIOTX } from "./WIOTX";
 
 export { Ownable__factory } from "./factories/Ownable__factory";
 export { ERC20__factory } from "./factories/ERC20__factory";
@@ -38,3 +39,4 @@ export { IMigrator__factory } from "./factories/IMigrator__factory";
 export { UniswapV2Pair__factory } from "./factories/UniswapV2Pair__factory";
 export { UniswapV2Router02__factory } from "./factories/UniswapV2Router02__factory";
 export { WETH9__factory } from "./factories/WETH9__factory";
+export { WIOTX__factory } from "./factories/WIOTX__factory";
