@@ -29,6 +29,12 @@ $ cp .env.example .env # edit with your favorite editor!
 $ npx hardhat --network iotextestnet deploy
 ```
 
+## Sushiswap interface (optional)
+Steps:
+1. Fork https://github.com/sushiswap/sushiswap-interface  
+2. Add iotex chainId and contracts address [here](https://github.com/sushiswap/sushiswap-interface/tree/canary/src/constants)  
+3. Deploy
+
 ## Deployed testnet contracts
 WETH9: `0x48690Cc897e7fEB8605A0B8d4754D9d187b91F38`  (note: My wrong! Looks like we need WIOTX here, could be replaced easily!)
 SushiToken: `0x2d52e036D8810220b07f668Ed9bD2EC9CE9bB66E`  
